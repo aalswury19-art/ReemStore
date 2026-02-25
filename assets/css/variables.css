@@ -1,0 +1,115 @@
+:root{
+
+/* ===== Backgrounds ===== */
+--bg:#0b0f14;
+--bg-soft:#0f131a;
+--card:#111827;
+--card2:#1e293b;
+
+/* ===== Gold Neon Theme ===== */
+--gold:#FFD400;
+--gold-soft:#ffd40033;
+--gold-medium:#ffd40088;
+--gold-glow:0 0 20px #FFD40088;
+--gold-glow-strong:0 0 30px #FFD400;
+
+/* ===== Text Colors ===== */
+--text:#ffffff;
+--text-soft:#9ca3af;
+--text-muted:#6b7280;
+
+/* ===== Borders ===== */
+--border:#FFD40033;
+--border-soft:#1e293b;
+
+/* ===== Effects ===== */
+--shadow-soft:0 0 20px rgba(0,0,0,0.6);
+--shadow-gold:0 0 20px #FFD40055;
+
+/* ===== Buttons ===== */
+--btn-gradient:linear-gradient(45deg,#FFD400,#ffea70);
+
+/* ===== Mobile UI ===== */
+--max-width:430px;
+
+}
+
+/* ===== Base Style ===== */
+
+body{
+ background:var(--bg);
+ color:var(--text);
+ min-height:100vh;
+ font-family:'Cairo',sans-serif;
+}
+
+/* ===== Container ===== */
+
+.container{
+ max-width:var(--max-width);
+ margin:0 auto;
+ padding:16px;
+}
+
+/* ===== Cards ===== */
+
+.card{
+ background:var(--card);
+ border:1px solid var(--border);
+ border-radius:18px;
+ padding:16px;
+ box-shadow:var(--shadow-soft);
+}
+
+/* ===== Titles ===== */
+
+.title{
+ color:var(--gold);
+ text-shadow:var(--gold-glow);
+ font-weight:700;
+}
+
+/* ===== Buttons ===== */
+
+.btn{
+ background:transparent;
+ border:1px solid var(--gold);
+ color:var(--gold);
+ padding:14px;
+ border-radius:30px;
+ font-weight:600;
+ transition:0.2s;
+}
+
+.btn:active{
+ transform:scale(0.96);
+ background:var(--gold-soft);
+ box-shadow:var(--gold-glow);
+}
+
+/* ===== Inputs ===== */
+
+input{
+ width:100%;
+ padding:14px;
+ background:var(--bg-soft);
+ border:1px solid var(--border);
+ border-radius:14px;
+ color:white;
+ outline:none;
+}
+
+input:focus{
+ border-color:var(--gold);
+ box-shadow:var(--gold-glow);
+}
+
+/* ===== Footer ===== */
+
+footer{
+ background:var(--card);
+ border-top:1px solid var(--border);
+ padding:20px;
+ text-align:center;
+ color:var(--text-soft);
+  }
